@@ -19,19 +19,33 @@
         label {
             display: block;
         }
+
+        /* bagian form validation */
+        input:invalid,
+        input:required:invalid {
+            border: none;
+            outline: 2px solid red;
+            border-radius: 2px;
+        }
+        input:valid,
+        input:required {
+            border: 1px solid black;
+            outline: inherit;
+            border-radius: inherit;
+        }
     </style>
 </head>
 <body>
     
-    <form action="" method="post">
+    <form action="" method="post" autocomplete="off">
         <div>
             <label for="nama">Masukkan Nama</label>
-            <input type="text" name="nama" id="nama">
+            <input type="text" name="nama" id="nama" autofocus required minlength="3" maxlength="5">
         </div>
 
         <div>
             <label for="email">Masukkan email</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required oninvalid="this.setCustomValidity('ini harus di isi')" oninput="this.setCustomValidity('')">
         </div>
 
         <div>
@@ -46,12 +60,14 @@
 
         <div>
             <label for="angka">Masukkan Angka</label>
-            <input type="number" name="angka" id="angka">
+            <input type="number" name="angka" id="angka" min="10" max="100" step="5">
         </div>
 
         <div>
             <label for="slider">Masukkan Angka</label>
-            <input type="range" name="slider" id="slider">
+            <span class="awal"></span>
+            <input type="range" name="slider" id="slider" min="0" max="100">
+            <span class="akhir"></span>
         </div>
 
         <div>
@@ -62,11 +78,34 @@
         <div>
             <label for="warna">Masukkan Warna</label>
             <input type="color" name="warna" id="warna">
+            <span class="hexa"></span>
         </div>
         <div>
             <button type="submit">Kirim</button>
         </div>
     </form>
 
+    <script>
+        // bagian slider angka
+        const slider = document.querySelector('#slider');
+        const awal = document.querySelector('.awal');
+        const akhir = document.querySelector('.akhir');
+
+        awal.innerHTML = slider.min;
+        akhir.innerHTML = slider.value;
+        slider.addEventListener('input', function (){
+            akhir.innerHTML = slider.value;
+        });
+
+        // bagian memasukkan warna
+        const warna = document.querySelector('#warna');
+        const hexa = document.querySelector('.hexa');
+
+        hexa.innerHTML = warna.value;
+        warna.addEventListener('input', function(){
+            hexa.innerHTML = warna.value;
+            hexa.style.color = warna.value;
+        });
+    </script>
 </body>
 </html>
