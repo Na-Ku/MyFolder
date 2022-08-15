@@ -2,23 +2,43 @@ header {
     background-color: rgba(173, 216, 230, 0.603);
 
     h1 {
-        color: rgb(165, 9, 9);
+        // color: rgb(165, 9, 9);
         font-family: 'Courier New', Courier, monospace;
     }
 }
 
-.main-part1, footer {
-    .container-part1 & {
-        background-color: lightblue;
-    }
-    h2, p {
-        background-color: rgba(255, 0, 0, 0.267);
-        &:hover {
-            background-color: yellow;
-        }
-    }
+// .main-part1, footer {
+//     .container-part1 & {
+//         background-color: lightblue;
+//     }
+//     h2, p {
+//         background-color: rgba(255, 0, 0, 0.267);
+//         &:hover {
+//             background-color: yellow;
+//         }
+//     }
 
-    &:hover {
-        background-color: black;
-    }
+//     &:hover {
+//         background-color: black;
+//     }
+// }
+
+
+$secondary-color: rgba(130, 240, 27, 0.678);
+$text-color: rgb(4, 4, 170);
+
+.main-part1 {
+    $primary-color: rgba(87, 87, 224, 0.74) !global;
+    background-color: $secondary-color;
+    color: $text-color;
+}
+
+$alert: (
+    'succes': yellow,
+    'warning': green,
+    'danger': red
+);
+
+h1 {
+    color: map-get($alert , 'succes' );
 }

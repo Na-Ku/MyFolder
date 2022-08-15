@@ -2,19 +2,14 @@ header {
   background-color: rgba(173, 216, 230, 0.603);
 }
 header h1 {
-  color: rgb(165, 9, 9);
   font-family: "Courier New", Courier, monospace;
 }
 
-.container-part1 .main-part1, .container-part1 footer {
-  background-color: lightblue;
+.main-part1 {
+  background-color: rgba(130, 240, 27, 0.678);
+  color: rgb(4, 4, 170);
 }
-.main-part1 h2, .main-part1 p, footer h2, footer p {
-  background-color: rgba(255, 0, 0, 0.267);
-}
-.main-part1 h2:hover, .main-part1 p:hover, footer h2:hover, footer p:hover {
-  background-color: yellow;
-}
-.main-part1:hover, footer:hover {
-  background-color: black;
+
+h1 {
+  color: yellow;
 }/*# sourceMappingURL=main.css.map */
