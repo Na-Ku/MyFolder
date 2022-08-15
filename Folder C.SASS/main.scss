@@ -6,3 +6,19 @@ header {
         font-family: 'Courier New', Courier, monospace;
     }
 }
+
+.main-part1, footer {
+    .container-part1 & {
+        background-color: lightblue;
+    }
+    h2, p {
+        background-color: rgba(255, 0, 0, 0.267);
+        &:hover {
+            background-color: yellow;
+        }
+    }
+
+    &:hover {
+        background-color: black;
+    }
+}
