@@ -43,10 +43,10 @@
 //     color: map-get($alert , 'succes' );
 // }
 
-@import 'mixin';
+@use 'mixin';
 
 .container-part1 ul {
-    @include iniline-list();
+    @include mixin.iniline-list();
     li {
         background-color: yellow;
         padding: 0.5em;
