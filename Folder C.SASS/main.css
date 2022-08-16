@@ -1,15 +1,34 @@
-header {
-  background-color: rgba(173, 216, 230, 0.603);
+.container-part1 ul {
+  margin: 0;
+  padding: 0;
 }
-header h1 {
-  font-family: "Courier New", Courier, monospace;
+.container-part1 ul li {
+  list-style: none;
+  display: inline-block;
+}
+.container-part1 ul li {
+  background-color: yellow;
+  padding: 0.5em;
+}
+.container-part1 ul li a {
+  color: blue;
+  text-decoration: none;
 }
 
-.main-part1 {
-  background-color: rgba(130, 240, 27, 0.678);
-  color: rgb(4, 4, 170);
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 600px;
+  height: 400px;
+  background-color: rgba(238, 170, 170, 0.6666666667);
 }
-
-h1 {
-  color: yellow;
+.footer .box {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  background-color: rgba(59, 95, 5, 0.664);
+  text-align: center;
+  line-height: 60px;
 }/*# sourceMappingURL=main.css.map */
