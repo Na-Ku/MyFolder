@@ -60,7 +60,7 @@
 
 
 .footer {
-    @include flex-box(row-reverse);
+    @include mixin.flex-box(row-reverse);
     width: 600px;
     height: 400px;
     background-color: #eaaa;
