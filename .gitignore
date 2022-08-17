@@ -1,2 +1,5 @@
 *.docx
-*tmp
+*.tmp
+*.jpg
+*.jpeg
+*.png
