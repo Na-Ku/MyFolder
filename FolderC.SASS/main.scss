@@ -58,6 +58,13 @@
     }
 }
 
+.square-profile {
+    @include mixin.profilePic(200px, $circle: flase);
+}
+.circle-profile {
+    @include mixin.profilePic(150px, $circle: true)
+}
+
 
 .footer {
     @include mixin.flex-box(row-reverse);

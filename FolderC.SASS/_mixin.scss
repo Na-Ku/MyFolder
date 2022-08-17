@@ -14,3 +14,14 @@
     align-items: center;
     flex-direction: $direction;
 }
+
+@mixin profilePic ($size, $circle: flase) {
+    width: $size;
+    height: $size;
+    border: 5px solid whitesmoke;
+    box-shadow: 1px 1px 3px rgba($color: #000, $alpha: 0.3);
+
+    @if ($circle == true ) {
+        border-radius: 50%;
+    }
+}
