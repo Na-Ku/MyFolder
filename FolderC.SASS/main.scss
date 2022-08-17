@@ -43,7 +43,7 @@
 //     color: map-get($alert , 'succes' );
 // }
 
-@use 'mixin';
+@use 'fileMixin/mixin';
 
 .container-part1 ul {
     @include mixin.iniline-list();
