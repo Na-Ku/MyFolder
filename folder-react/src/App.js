@@ -17,6 +17,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
 
         <Main name="Fajar"/>
+        <Main name="Aleks"/>
+        <Main name="Ruben"/>
         <p>
           Xixixixigti <code>src/App.js</code> and save to reloa & halo cuy.
         </p>
