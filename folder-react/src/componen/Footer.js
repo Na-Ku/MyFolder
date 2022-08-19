@@ -5,7 +5,7 @@ class Footer extends React.Component {
         return (
             <footer>
                 <h4>License</h4>
-                <marquee behavior="/" direction="/">
+                <marquee>
                     percobaan pertama
                 </marquee>
             </footer>
