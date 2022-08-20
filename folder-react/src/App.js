@@ -7,12 +7,13 @@ import Footer from './componen/Footer';
 
 function App() {
 
+  const NavHead = "Kolom Navigasi";
 
   return (
     <div className="App">
       <header className="App-header">
 
-        <Navbar />
+        <Navbar NavHead={NavHead}/>
 
         <img src={logo} className="App-logo" alt="logo" />
 
