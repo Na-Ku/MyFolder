@@ -1,7 +1,7 @@
-const firstButton = () => {
+const firstButton = (props) => {
     return (
         <div>
-            <button>Klik di Sini</button>
+            <button onClick={() => props.klik()}>Klik di Sini</button>
         </div>
     );
 }

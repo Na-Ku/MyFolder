@@ -7,7 +7,18 @@ import Footer from './componen/Footer';
 
 function App() {
 
+  const Paraf = () => {
+    return (
+      <div>
+        <i>mantapppu!!</i>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, numquam!</p>
+      </div>
+    );
+  };
   const NavHead = "Kolom Navigasi";
+  const klik = () => {
+    return alert('kimak kau');
+  }
 
   return (
     <div className="App">
@@ -24,9 +35,9 @@ function App() {
           Xixixixigti <code>src/App.js</code> and save to reloa & halo cuy.
         </p>
 
-        <FirstButton />
+        <FirstButton klik={klik} />
 
-        <Footer />
+        <Footer Paraf={Paraf}/>
       </header>
     </div>
   );

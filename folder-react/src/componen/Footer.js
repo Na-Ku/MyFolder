@@ -1,6 +1,7 @@
 import React from "react"
 
 class Footer extends React.Component {
+
     render () {
         return (
             <footer>
@@ -8,6 +9,7 @@ class Footer extends React.Component {
                 <marquee>
                     percobaan pertama
                 </marquee>
+                {this.props.Paraf()}
             </footer>
         )
     }
