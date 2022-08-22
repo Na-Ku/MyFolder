@@ -4,6 +4,7 @@ import FirstButton  from './componen/firstButton';
 import Navbar from './componen/Navbar';
 import Main from './componen/Main';
 import Footer from './componen/Footer';
+import Paraf1 from './componen/Main';
 
 function App() {
 
@@ -28,9 +29,9 @@ function App() {
 
         <img src={logo} className="App-logo" alt="logo" />
 
-        <Main name="Fajar"/>
+        {/* <Main name="Fajar"/>
         <Main name="Aleks"/>
-        <Main name="Ruben"/>
+        <Main name="Ruben"/> */}
         <p>
           Xixixixigti <code>src/App.js</code> and save to reloa & halo cuy.
         </p>
@@ -39,7 +40,12 @@ function App() {
 
         <Footer Paraf={Paraf}/>
       </header>
+
+      <div className='container'>
+        <Main Parafg = {Paraf1 }  />
+      </div>
     </div>
+
   );
 }
 
