@@ -4,7 +4,6 @@
 //     )
 // }
 
-
 const Paraf1 = () => {
     return (
         <div class="paragraf">
@@ -18,4 +17,10 @@ const Paraf1 = () => {
     );
 }
 
+// const Element = React.createElement('div', {
+//         children: [Main, Paraf1]
+//     });
+
+
+// export default Paraf1;
 export default Paraf1;

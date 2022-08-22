@@ -4,7 +4,7 @@ import FirstButton  from './componen/firstButton';
 import Navbar from './componen/Navbar';
 import Main from './componen/Main';
 import Footer from './componen/Footer';
-import Paraf1 from './componen/Main';
+
 
 function App() {
 
@@ -42,7 +42,7 @@ function App() {
       </header>
 
       <div className='container'>
-        <Main Parafg = {Paraf1 }  />
+        <Main Parafg = {Element }  />
       </div>
     </div>
 
