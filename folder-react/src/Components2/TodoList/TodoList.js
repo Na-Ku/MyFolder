@@ -1,12 +1,11 @@
 import './TodoList.css'
-// import Todo from '../Todo/Todo';
 
 const TodoList = (props) => {
     // console.log(props.dataTodos);
     return (
         <ul>
             {props.dataTodos.map((todo) => {
-                return <li key={todo.id}>{todo.title}</li>
+                return ( <li key={todo.id}>{todo.title}</li> );
             })}
         </ul>
     )

@@ -1,19 +1,23 @@
 import './Todo.css'
 import TodoList from '../TodoList/TodoList'
+import TodoCreate from '../Todo-create/TodoCreate'
 
 const Todo = () => {
+    const ListTodo = [
+            {id: 1, title: "Eat"},
+            {id: 2, title: "Sleep"},
+            {id: 3, title: "Code"},
+        ]
 
-    
-    const List = [
-            {id: 1, tittle: 'Eat'},
-            {id: 2, tittle: 'Sleep'},
-            {id: 3, tittle: 'Code'},
-        ];
+    const eventCreateTodo = (todo) => {
+        ListTodo.push(todo);
+    }
 
     return (
         <div>
             <h3>Todo List</h3>
-            <TodoList dataTodos = {List} />
+            <TodoCreate onCreateTodo={eventCreateTodo}/>  
+            <TodoList dataTodos = {ListTodo} />
         </div>
     )
 }
