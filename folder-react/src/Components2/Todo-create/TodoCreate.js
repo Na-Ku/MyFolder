@@ -8,9 +8,13 @@ const TodoCreate = (props) => {
     const handleSubmit = (event) => {
         event.preventDefault()
 
+        const isi = () => {
+            // return;
+            console.log('diklik')
+        }
         const newTodo = {
             id: Math.floor(Math.random() + 10) + 1,
-            title: 'kimak kau'
+            title: isi()
         }
 
         props.onCreateTodo(newTodo);
