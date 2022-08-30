@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import FirstButton  from './componen/firstButton';
-import Navbar from './componen/Navbar';
-import Main from './componen/Main';
-import Footer from './componen/Footer';
+import FirstButton  from './componens/firstButton';
+import Navbar from './componens/Navbar';
+import Main from './componens/Main';
+import Footer from './componens/Footer';
 
 
 function App() {
