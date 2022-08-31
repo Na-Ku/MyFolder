@@ -1,16 +1,16 @@
 // import { useState } from 'react'
 import './TodoCreate.css'
 
-const TodoCreate = (props) => {
+const TodoCreate = (props, {getValue}) => {
 
     // const [getInput, setInput] = useState('')
 
-    const handleSubmit = (event) => {
+    const handleSubmit = (event, {getValue}) => {
         event.preventDefault()
 
-        const isi = () => {
-            // return;
-            console.log('diklik')
+        const isi = ({getValue}) => {
+            return getValue;
+            // console.log('diklik')
         }
         const newTodo = {
             id: Math.floor(Math.random() + 10) + 1,
