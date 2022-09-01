@@ -1,15 +1,15 @@
 // import { useState } from 'react'
 import './TodoCreate.css'
 
-const TodoCreate = (props, {getValue}) => {
+const TodoCreate = (props) => {
 
     // const [getInput, setInput] = useState('')
 
-    const handleSubmit = (event, {getValue}) => {
+    const handleSubmit = (event, ) => {
         event.preventDefault()
 
-        const isi = ({getValue}) => {
-            return getValue;
+        const isi = () => {
+            return
             // console.log('diklik')
         }
         const newTodo = {
