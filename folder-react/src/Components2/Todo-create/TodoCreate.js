@@ -5,7 +5,7 @@ const TodoCreate = (props) => {
 
     // const [getInput, setInput] = useState('')
 
-    const handleSubmit = (event, ) => {
+    const handleSubmit = (event) => {
         event.preventDefault()
 
         const isi = () => {
