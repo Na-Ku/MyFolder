@@ -1,17 +1,18 @@
 import './App.css';
-import Todo from  './Components2/Todo/Todo'
-
 
 const App = () => {
 
 
   return (
-    <div>
       <div className="App">
-        <Todo />
+        <header className='App-header'>
+          <nav>Test Pertama</nav>
+        </header>
+        <section>
+          <h2>Hello Dun!</h2>
+        </section>
       </div>
-    </div>
-  )
+  );
 }
 
 export default App;
