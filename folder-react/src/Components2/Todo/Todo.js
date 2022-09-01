@@ -15,10 +15,20 @@ const Todo = () => {
         // console.log(ListTodo);
     }
 
+    const [getValue, setValue] = useState("Kimak kau");
+    const changeValue = () => {
+        setValue("kimak kau");
+    };
+
     return (
         <div>
             <h3>Todo List</h3>
-            <TodoCreate onCreateTodo={eventCreateTodo}/>  
+            <TodoCreate onCreateTodo={eventCreateTodo} navValue = {getValue}/>  
+                <nav>
+                    <h3>Ini Berikutnya:</h3>
+                    <p>{getValue}</p>
+                    <button onClick={() => changeValue()} >Klik</button>
+                </nav> 
             <TodoList dataTodos = {getListTodo} />
         </div>
     )
