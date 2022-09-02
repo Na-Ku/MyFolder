@@ -11,10 +11,11 @@ const App = () => {
 
         <h3>Jumlah Sekarang adalah : {getValue} </h3>
         <button onClick={() => setValue((prev) => prev + 1  ) } >Penambahan</button>
-        <button onClick={() => setValue((prev) => prev - 1  ) } >Pengurangan</button>
+        <button onClick={() => setValue((prev) => prev  - 1  ) } >Pengurangan</button>
 
         {/*<Intro jasa="Masak" />
         <Intro jasa="Makan" /> */}
+        
       </div>
   );
 }
