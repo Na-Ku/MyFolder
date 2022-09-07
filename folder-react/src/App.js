@@ -1,10 +1,14 @@
 import './App.css';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 // import Intro from './components/intro';
 
 const App = () => {
 
   const [getValue, setValue] = useState(1)
+
+  useEffect ( () => {
+    alert('halo');
+  } )
 
   return (
       <div>
