@@ -4,11 +4,11 @@ import React, {useState, useEffect} from 'react';
 
 const App = () => {
 
-  const [getValue, setValue] = useState(1)
+  const [getValue, setValue] = useState(0)
   const [getNewValue, setNewValue] = useState(" ")
 
   useEffect ( () => {
-    if (getValue > 1 && getValue < 5) {
+    if (getValue > 0 && getValue < 5) {
       setNewValue("Baru")
     } else if (getValue >= 5) {
       setNewValue("Baru Lagi")
