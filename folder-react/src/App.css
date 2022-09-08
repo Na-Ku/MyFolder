@@ -7,6 +7,13 @@
 body {
   background-color: rgb(22, 25, 43);
   color: azure;
+  margin-bottom: 40px;
+}
+
+a {
+  margin: 50px auto;
+  text-decoration: none;
+  color: rgb(21, 123, 212);
 }
 
 /* picture {
