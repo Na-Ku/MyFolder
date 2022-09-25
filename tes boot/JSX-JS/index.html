@@ -15,17 +15,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   </head>
   <body>
-    <div id="js"></div>
+    <div class="container">
+        <p>Berikut ini adalah 'button' dan juga 'card' yang dibuat dengan tanpa JSX, atau juga denga cara menual. Cara tersebut adalah dengan membuat React.Component menggunakan class yang nantinya akan dirender.</p>
+        <p>1. Tombol 'Button' sederhana ini menunjukkan cara membuat element tanpa JSX dengan cara membuat React Element secara sederhana</p>
+        <div id="bjs"></div>
+        <br>
+        <p>2. Berikutnya adalah 'Card' yang dibuat dengan sedikit lebih kompleks yang di mana terdapat parent element dan juga child element</p>
+        <div id="Js"></div>
+    </div>
 
     <script type="text/babel">
-        class JS extends React.Component {
+        class Button extends React.Component {
             render() {
-                const tombol = React.createElement('a', {href : '#', class : 'btn btn-primary'}, 'klik di sini' )
-                return tombol;
+                const btn = React.createElement('button', {class : 'btn btn-primary'}, 'klik di sini' )
+                return btn 
             }
         };
-        ReactDOM.render(<Button/>, document.getElementById('js'));
-    </script>
+        ReactDOM.render(<Button/>, document.getElementById('bjs'));
+
+        class Card extends React.Component {
+            render() {
+                const link = React.createElement('a', {href: '#', class: 'btn btn-primary'}, 'Go Some Where')
+                const cardText = React.createElement('p', {class: 'card-text'}, 'Ini adalah Card yang dibuat tanpa JSX dengan menggunakan React Create Element')
+                const cardTitle = React.createElement('h5', {class: 'card-title'}, 'Card With No JSX')
+                const cardBody = React.createElement('div', {class: 'card-body'}, cardTitle, cardText, link)
+                const card = React.createElement('div', {class: 'card'}, cardBody)
+                return card
+            }
+        };
+        ReactDOM.render(<Card/>, document.getElementById('Js'))
+    // </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
