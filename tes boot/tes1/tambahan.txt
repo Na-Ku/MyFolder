@@ -1,0 +1,4 @@
+untuk membuat animasi yang lebih bagus bisa menggunakan beberapa bantuan dari beberapa library animasi atau juga layanan website, berikut contohnya :
+- aos => library untuk animasi
+- gsap => layanan website untuk animasi (namun bukan freamwork atau library)
+- 
