@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link CDN React -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <title> React Component </title>
+    <!-- link CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body class="container bg-dark text-light">
+    <div class="container mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <div id="bjs"></div>
+                    <div id="bjsF"></div>
+                    <div id="Js"></div>
+                    <div id="cardF"></div>
+                </div
+            </div>
+        </div>
+    </div>
+
+    <script type="text/babel">
+        //  Class Componet
+        class Button extends React.Component {
+            render() {
+                return <button className="btn btn-danger"> Go Somewhere </button>
+            }
+        }
+        ReactDOM.render(<Button/>, document.getElementById('bjs'))
+
+        //  Function Component 
+        function ButtonF () {
+            return <button className="btn btn-primary mt-3"> Go Somewhere </button>
+        }
+        ReactDOM.render(<ButtonF/>, document.getElementById('bjsF'))
+
+
+        // Class Component
+        class Card extends React.Component {
+            render() {
+                const card = (
+                    <div className="card mt-4" style={{with: "18rem"}}>
+                        <div className="card-body">
+                            <h5 className="card-title text-dark">Card With JSX</h5>
+                            <p className="card-text text-dark">
+                                Card ini dibuat menggunakan JSX, namun dibuat dengan Class Component
+                            </p>
+                            <a href="#" className="btn btn-danger">Click on Here</a>
+                        </div>
+                    </div>
+                )
+                return card
+            }
+        }
+        ReactDOM.render(<Card/>, document.getElementById('Js'))
+
+        // Function Component
+        const CardFunction = () => {
+            return(
+                <div className="card mt-4">
+                    <div className="card-body">
+                        <h5 className="card-title text-dark">Card With JSX</h5>
+                        <p className="card-text text-dark">
+                            Card ini dibuat dengan JSX juga, namun dibuat menggunakan Function Component "Arrow Function"
+                        </p>
+                        <p className="card-text text-dark">
+                            Berikut adalah tag button yang diambil dari Component sebelumnya (yaitu komponen button yang dibuat menggunakan Function Component). Artinya di dalam suatu Component, bisa diisi dengan Component lainnya.
+                        </p>
+                        <ButtonF/>
+                    </div>
+                </div>
+            )
+        }
+        ReactDOM.render(<CardFunction/>, document.getElementById('cardF'))
+
+
+    // </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
