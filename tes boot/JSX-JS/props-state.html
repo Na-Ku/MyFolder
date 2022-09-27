@@ -50,9 +50,15 @@
                 super();
                 this.state = {
                     judul : "Card With JSX",
-                    Tombol : "state 1"
+                    Tombol : "state 1",
+                    text3 : "3. Paragraf ini bisa diganti lewat tombol 'Ganti tag p'"
                 }
             }
+            GantiText = () => {
+                this.setState({
+                    text3 : "Tulisan atau paragraf ini diganti menggunakan cara Function yang ada di dalam Component"
+                })
+            };
             render() {
                 const card = (
                     <div className="card mt-4" style={{with: "18rem"}}>
@@ -62,10 +68,13 @@
                                 1. Card ini dibuat menggunakan JSX, namun dibuat dengan Class Component
                             </p>
                             <p className="card-text text-dark">
-                                2. Berikut ini adalah tombol "button" Props 1 dan 2 yang tulisannya diganti dengan menggunakan "props", serta tombol State 1 yang ditulis menggunakan state. 
+                                2. Berikut ini adalah tombol "button" Props 1 yang tulisannya diganti dengan menggunakan "props", serta tombol State 1 yang ditulis menggunakan state. 
+                            </p>
+                            <p className="card-text text-dark">
+                                {this.state.text3}
                             </p>
                             <Button gantiTulisan="Props 1"/>
-                            <Button gantiTulisan="Props 2"/>
+                            <button onClick={this.GantiText}>Ganti tag p</button>
                             <Button gantiTulisan={this.state.Tombol}/>
                         </div>
                     </div>
@@ -77,12 +86,18 @@
 
         // Function Component
         const CardFunction = () => {
+
+            const [getState, setState]= React.useState('paragraf baru');
+
             return(
                 <div className="card mt-4">
                     <div className="card-body">
                         <h5 className="card-title text-dark">Card With JSX</h5>
                         <p className="card-text text-dark">
                             Card ini dibuat dengan JSX juga, namun dibuat menggunakan Function Component "Arrow Function"
+                        </p>
+                        <p className="card-text text-dark">
+                            {getState}
                         </p>
                         <p className="card-text text-dark">
                             Berikut adalah tag button yang diambil dari Component sebelumnya (yaitu komponen button yang dibuat menggunakan Function Component). Artinya di dalam suatu Component, bisa diisi dengan Component lainnya.
