@@ -1,25 +1,16 @@
 import "./App.css";
-import { Container } from "react-bootstrap";
 import "./components/fil.css";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 // import component
 import Navb from "./components/Nav";
-import Hero from "./components/Hero";
+import Cont from "./components/Main";
+
 
 function App() {
   return (
-    <Container>
+    <div>
       <Navb fluid />
-      <Row>
-        <Col sm={7}>
-          <Hero />
-        </Col>
-        <Col sm={5}>
-          <h2>Halo</h2>
-        </Col>
-      </Row>
-    </Container>
+      <Cont/>
+    </div>
   );
 }
 
