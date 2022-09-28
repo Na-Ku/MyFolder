@@ -1,3 +1,8 @@
 body {
     background-image: url(gambar1/bg/bg1.jpg);
 }
+
+#hero {
+    max-width: 600px;
+    max-height: 300px;
+}
