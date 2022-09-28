@@ -8,7 +8,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 const Navb = () => {
   return (
     // <Navbar bg="primary" variant="dark" expand="lg"> Jadi, react-bootstrap ini bisa dikombinasikan dengan syntax bootstrap biasa.
-    <Navbar className="navbar bg-primary bg-opacity-75" variant="dark">
+    <Navbar className="navbar bg-primary bg-opacity-75 shadow-sm" variant="dark">
       <Container>
         <Navbar.Brand href="#" className="fw-bold">
           Sekolah-Ku
