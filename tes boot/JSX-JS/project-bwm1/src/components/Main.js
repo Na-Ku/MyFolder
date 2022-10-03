@@ -1,4 +1,5 @@
 import { Container } from "react-bootstrap";
+import { Accordion } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Hero from "./Hero";
@@ -15,10 +16,12 @@ const Cont = () => {
           <h2 className="d-flex justify-content-center">Event</h2>
         </Col>
       </Row>
-      <Row>
-        <h4>Buah</h4>
-        <List />
-      </Row>
+      <Accordion defaultActiveKey="0">
+        <Accordion.Item eventKey="0">
+          <Accordion.Header>Map Method</Accordion.Header>
+          <Accordion.Body>{<List />}</Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
     </Container>
   );
 };
