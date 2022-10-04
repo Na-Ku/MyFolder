@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Hero from "./Hero";
 import List from "./coba/list";
+import Filter from "./coba/filter";
 
 const Cont = () => {
   return (
@@ -20,6 +21,22 @@ const Cont = () => {
         <Accordion.Item eventKey="0">
           <Accordion.Header>Map Method</Accordion.Header>
           <Accordion.Body>{<List />}</Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+      <Accordion defaultActiveKey="1">
+        <Accordion.Item eventKey="1">
+          <Accordion.Header>Filter Method</Accordion.Header>
+          <Accordion.Body>{<Filter />}</Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+      <Accordion defaultActiveKey="2">
+        <Accordion.Item eventKey="2">
+          <Accordion.Header>Reduce Method</Accordion.Header>
+          <Accordion.Body>
+            <p>
+              Method ini kurang lebih adalah untuk menumlahkan seluruh isi dari Object maupun Array 
+            </p>
+          </Accordion.Body>
         </Accordion.Item>
       </Accordion>
     </Container>

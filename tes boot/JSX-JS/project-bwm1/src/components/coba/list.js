@@ -1,13 +1,15 @@
-
 const List = () => {
-    const fruits = ['jeruk', 'matoa', 'durian', 'alpokat']
-    const fruit = fruits.map( (f, ind)=> <li key={ind}>{f}</li> )
+  const fruits = ["jeruk", "matoa", "durian", "alpokat"];
 
-    return(
-        <ul>
-            {fruit}
-        </ul>
-    )
-}
+  const fruit = fruits.map((f, ind) => <li key={ind}>{f}</li>);
+  const fruit2 = fruits.filter((fl) => fl <= [3]);
 
-export default List
+  return (
+    <>
+      <ul>{fruit}</ul>
+      <ul>{fruit2}</ul>
+    </>
+  );
+};
+
+export default List;
