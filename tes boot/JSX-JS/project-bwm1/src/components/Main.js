@@ -34,7 +34,10 @@ const Cont = () => {
           <Accordion.Header>Reduce Method</Accordion.Header>
           <Accordion.Body>
             <p>
-              Method ini kurang lebih adalah untuk menumlahkan seluruh isi dari Object maupun Array 
+              Method ini kurang lebih adalah untuk menumlahkan seluruh isi dari Object maupun Array
+            </p>
+            <p>
+              Selain itu ada juga Method yang lain yang bisa dieksplor seperti Method Push, dan lain-lain
             </p>
           </Accordion.Body>
         </Accordion.Item>
