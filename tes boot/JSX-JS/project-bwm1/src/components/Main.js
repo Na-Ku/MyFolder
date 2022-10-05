@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import Hero from "./Hero";
 import List from "./coba/list";
 import Filter from "./coba/filter";
+import Cards from "./coba/card";
 
 const Cont = () => {
   return (
@@ -33,15 +34,12 @@ const Cont = () => {
         <Accordion.Item eventKey="2">
           <Accordion.Header>Reduce Method</Accordion.Header>
           <Accordion.Body>
-            <p>
-              Method ini kurang lebih adalah untuk menumlahkan seluruh isi dari Object maupun Array
-            </p>
-            <p>
-              Selain itu ada juga Method yang lain yang bisa dieksplor seperti Method Push, dan lain-lain
-            </p>
+            <p>Method ini kurang lebih adalah untuk menumlahkan seluruh isi dari Object maupun Array</p>
+            <p>Selain itu ada juga Method yang lain yang bisa dieksplor seperti Method Push, dan lain-lain</p>
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
+      <Cards />
     </Container>
   );
 };
