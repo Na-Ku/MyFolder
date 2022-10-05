@@ -8,7 +8,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 const Navb = () => {
   return (
     // <Navbar bg="primary" variant="dark" expand="lg"> Jadi, react-bootstrap ini bisa dikombinasikan dengan syntax bootstrap biasa.
-    <Navbar className="navbar bg-primary bg-opacity-75 shadow-sm" variant="dark">
+    <Navbar className="navbar bg-primary bg-opacity-75 shadow-sm" variant="dark" sticky="top">
       <Container>
         <Navbar.Brand href="#" className="fw-bold">
           Sekolah-Ku
@@ -18,7 +18,8 @@ const Navb = () => {
           <Nav className="me-auto my-2 my-lg-0 fw-semibold" style={{ maxHeight: "100px" }} navbarScroll>
             <Nav.Link href="#action1">Home</Nav.Link>
             <NavDropdown title="Season" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action2">Ova</NavDropdown.Item>
+              <NavDropdown.Item href="#action2">Season</NavDropdown.Item>
+              <NavDropdown.Item href="#action3">Ova</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action4">My Anime List</NavDropdown.Item>
