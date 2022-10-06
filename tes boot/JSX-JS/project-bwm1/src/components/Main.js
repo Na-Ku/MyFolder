@@ -6,6 +6,7 @@ import Hero from "./Hero";
 import List from "./coba/list";
 import Filter from "./coba/filter";
 import Cards from "./coba/card";
+import Inputs from "./coba/input";
 
 const Cont = () => {
   return (
@@ -39,7 +40,7 @@ const Cont = () => {
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
-      <Cards />
+      <Cards /> <Inputs />
     </Container>
   );
 };
