@@ -17,6 +17,15 @@ const Cards = () => {
         };
       });
     },
+    reset: () => {
+      setMtr((data) => {
+        return {
+          ...data,
+          makan: "belum",
+          energi: 50,
+        };
+      });
+    },
   });
 
   return (
@@ -33,6 +42,9 @@ const Cards = () => {
             </ul>
             <button onClick={() => getMtr.tambah()} type="button" className="btn btn-outline-warning">
               Tambah Energi
+            </button>
+            <button onClick={() => getMtr.reset()} type="button" className="btn btn-outline-warning">
+              Reset
             </button>
           </div>
         </div>
