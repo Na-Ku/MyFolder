@@ -16,7 +16,7 @@ const Navb = () => {
       offset: 50,
       delay: 50,
     });
-  });
+  }, []);
 
   return (
     // <Navbar bg="primary" variant="dark" expand="lg"> Jadi, react-bootstrap ini bisa dikombinasikan dengan syntax bootstrap biasa.

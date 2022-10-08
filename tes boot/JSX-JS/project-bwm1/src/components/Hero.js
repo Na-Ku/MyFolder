@@ -13,7 +13,7 @@ const Hero = () => {
       offset: 50,
       delay: 50,
     });
-  });
+  }, []);
 
   return (
     <Carousel fade className="shadow mb-5 bg-body rounded" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
