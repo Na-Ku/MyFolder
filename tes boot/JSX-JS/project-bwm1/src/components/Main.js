@@ -42,7 +42,7 @@ const Cont = () => {
         </Accordion.Item>
       </Accordion>
       <Cards /> <Inputs />
-      <Ind/>
+      <Ind />
     </Container>
   );
 };
