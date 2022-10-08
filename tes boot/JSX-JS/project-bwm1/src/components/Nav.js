@@ -4,11 +4,23 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Navb = () => {
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+      delay: 50,
+    });
+  });
+
   return (
     // <Navbar bg="primary" variant="dark" expand="lg"> Jadi, react-bootstrap ini bisa dikombinasikan dengan syntax bootstrap biasa.
-    <Navbar className="navbar bg-primary bg-opacity-75 shadow-sm" variant="dark" sticky="top">
+    <Navbar className="navbar bg-primary bg-opacity-75 shadow-sm" variant="dark" sticky="top" data-aos="fade-down" data-aos-duration="850">
       <Container>
         <Navbar.Brand href="#" className="fw-bold">
           Sekolah-Ku
