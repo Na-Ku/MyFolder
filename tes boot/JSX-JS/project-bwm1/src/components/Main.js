@@ -7,6 +7,7 @@ import List from "./coba/list";
 import Filter from "./coba/filter";
 import Cards from "./coba/card";
 import Inputs from "./coba/input";
+import Ind from "./coba2/ind";
 
 const Cont = () => {
   return (
@@ -41,6 +42,7 @@ const Cont = () => {
         </Accordion.Item>
       </Accordion>
       <Cards /> <Inputs />
+      <Ind/>
     </Container>
   );
 };
