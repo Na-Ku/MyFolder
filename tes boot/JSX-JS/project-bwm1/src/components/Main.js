@@ -8,18 +8,22 @@ import Filter from "./coba/filter";
 import Cards from "./coba/card";
 import Inputs from "./coba/input";
 import Ind from "./coba2/ind";
+import CE from "./cE";
 
 const Cont = () => {
   return (
     <Container>
-      <Row className="mt-5 d-flex justify-content-around">
+      <Row className="mt-5 d-flex justify-content-start">
         <Col sm={8}>
           <Hero />
         </Col>
-        <Col sm={4}>
-          <h2 className="d-flex justify-content-center">Event</h2>
+        <Col sm={4} className="justify-content-end">
+          <CE />
         </Col>
       </Row>
+      <hr />
+      <hr />
+      <hr />
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
           <Accordion.Header>Map Method</Accordion.Header>
@@ -32,7 +36,7 @@ const Cont = () => {
           <Accordion.Body>{<Filter />}</Accordion.Body>
         </Accordion.Item>
       </Accordion>
-      <Accordion defaultActiveKey="2">
+      <Accordion defaultActiveKey="2" className="mb-3">
         <Accordion.Item eventKey="2">
           <Accordion.Header>Reduce Method</Accordion.Header>
           <Accordion.Body>
