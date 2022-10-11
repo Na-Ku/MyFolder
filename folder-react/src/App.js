@@ -1,13 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-import FirstButton  from './componens/firstButton';
-import Navbar from './componens/Navbar';
-import Main from './componens/Main';
-import Footer from './componens/Footer';
-
+import logo from "./logo.svg";
+import "./App.css";
+import FirstButton from "./componens/firstButton";
+import Navbar from "./componens/Navbar";
+import Main from "./componens/Main";
+import Footer from "./componens/Footer";
 
 function App() {
-
   const Paraf = () => {
     return (
       <div>
@@ -18,14 +16,13 @@ function App() {
   };
   const NavHead = "Kolom Navigasi";
   const klik = () => {
-    return alert('kimak kau');
-  }
+    return alert("kimak kau");
+  };
 
   return (
     <div className="App">
       <header className="App-header">
-
-        <Navbar NavHead={NavHead}/>
+        <Navbar NavHead={NavHead} />
 
         <img src={logo} className="App-logo" alt="logo" />
 
@@ -38,14 +35,13 @@ function App() {
 
         <FirstButton klik={klik} />
 
-        <Footer Paraf={Paraf}/>
+        <Footer Paraf={Paraf} />
       </header>
 
-      <div className='container'>
-        <Main Parafg = {Element }  />
+      <div className="container">
+        <Main Parafg={Element} />
       </div>
     </div>
-
   );
 }
 
