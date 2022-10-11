@@ -16,7 +16,7 @@ class TodoApp extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="new-todo">What needs to be done?</label>
           <input id="new-todo" onChange={this.handleChange} value={this.state.text} />
-          <button>Add #{this.state.items.length + 1}</button>
+          <button>Add : x{this.state.items.length + 1}</button>
         </form>
       </div>
     );
