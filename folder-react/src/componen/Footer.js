@@ -6,8 +6,7 @@ class Footer extends React.Component {
         return (
             <footer>
                 <h4>License</h4>
-                <marquee>
-                    percobaan pertama
+                <marquee>                percobaan pertama
                 </marquee>
                 {this.props.Paraf()}
             </footer>
