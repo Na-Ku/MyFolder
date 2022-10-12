@@ -4,6 +4,7 @@ import FirstButton from "./componens/firstButton";
 import Navbar from "./componens/Navbar";
 import Main from "./componens/Main";
 import Footer from "./componens/Footer";
+import Example from "./componens/coba/coba1";
 
 function App() {
   const Paraf = () => {
@@ -41,6 +42,8 @@ function App() {
       <div className="container">
         <Main Parafg={Element} />
       </div>
+
+      <Example />
     </div>
   );
 }
