@@ -15,9 +15,9 @@ const Todo = () => {
     // console.log(ListTodo);
   };
 
-  const [getValue, setValue] = useState("");
+  const [getValue, setValue] = useState("Kimak");
   const changeValue = () => {
-    setValue("");
+    setValue("Who the Kimak?");
   };
 
   return (

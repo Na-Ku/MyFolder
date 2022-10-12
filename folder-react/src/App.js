@@ -1,6 +1,7 @@
 import "./App.css";
 import Todo from "./Components2/Todo/Todo";
 import TodoApp from "./Components2/TAp";
+import Example from "./componen/todoListBaru/todo1";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
         <Todo />
         <TodoApp />
       </div>
+      <Example />
     </div>
   );
 };

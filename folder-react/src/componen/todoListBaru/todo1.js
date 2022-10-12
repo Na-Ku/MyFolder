@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from "react";
 
-export default function todo1() {
+const Example = () => {
+  const [name, setName] = useState("");
+  const changeName = (e) => setName(e.target.value);
+
+  
+
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <form>
+      <input type="text" value={name} onChange={changeName} />
+      <button type="submit">Go-Up</button>
+    </form>
+  );
+};
+export default Example;
