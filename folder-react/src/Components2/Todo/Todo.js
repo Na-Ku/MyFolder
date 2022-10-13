@@ -24,12 +24,12 @@ const Todo = () => {
     <div>
       <h3>Todo List</h3>
       <TodoCreate onCreateTodo={eventCreateTodo} navValue={getValue} />
+      <TodoList dataTodos={getListTodo} />
       <nav>
         <h3>Ini Berikutnya:</h3>
         <p>{getValue}</p>
         <button onClick={() => changeValue()}>Klik</button>
       </nav>
-      <TodoList dataTodos={getListTodo} />
     </div>
   );
 };

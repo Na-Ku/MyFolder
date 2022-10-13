@@ -4,7 +4,7 @@ const Example = () => {
   const [name, setName] = useState("");
   const changeName = (e) => setName(e.target.value);
 
-  
+    
 
   return (
     <form>
