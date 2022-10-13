@@ -17,7 +17,7 @@ const TodoCreate = (props, { getValue }) => {
     const newTodo = {
       id: Math.floor(Math.random() + 10) + 1,
       title: getInput,
-    };
+    }
     props.onCreateTodo(newTodo);
 
     setInput("");
