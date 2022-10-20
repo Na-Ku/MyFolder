@@ -19,6 +19,7 @@ const TodoCreate = (props, { getValue }) => {
       title: getInput,
     }
     props.onCreateTodo(newTodo);
+    // props.onCreateTodo ini perlu dicari tau lagi artinya
 
     setInput("");
     // kegunaan dari callback ini adalah supaya ketika inputan telah dimasukkan dan kirim maka kolom inputan tersebut akan kosong kembali
